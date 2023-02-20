@@ -12,7 +12,7 @@ app.config["SQLALCHEMY_DATABASE_URI"] = f'sqlite:///{db_path}'
 app.config["SQLALCHEMY_ECHO"] = False
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 
-db = SQLAlchemy(app)
+db = SQLAlchemy()
 
 from app import views
 from app import models
